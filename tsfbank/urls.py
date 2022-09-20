@@ -25,7 +25,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
     # ... the rest of your URLconf goes here ...
-    path('admin396/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('',include('basicbank.urls')),
 
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
